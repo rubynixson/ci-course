@@ -33,3 +33,10 @@ jobs:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         codecov
+
+    - name: upload codecov
+      run: |
+        curl -Os https://uploader.codecov.io/latest/macos/codecov
+
+        chmod +x codecov
+        ./codecov -t ${CODECOV_TOKEN}
