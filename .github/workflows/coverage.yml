@@ -34,9 +34,15 @@ jobs:
       run: |
         codecov
 
-    - name: upload codecov
-      run: |
-        curl -Os https://uploader.codecov.io/latest/macos/codecov
-
-        chmod +x codecov
-        ./codecov -t ${CODECOV_TOKEN=34035809-8cbd-41c8-b5ba-ed73790cb78b}
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        directory: ./coverage/reports/
+        env_vars: OS,PYTHON
+        fail_ci_if_error: true
+        files: ./coverage1.xml,./coverage2.xml
+        flags: unittests
+        name: codecov-umbrella
+        path_to_write_report: ./coverage/codecov_report.txt
+        verbose: true
