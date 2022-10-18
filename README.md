@@ -1,3 +1,6 @@
+[![codecov](https://codecov.io/gh/rubynixson/ci-course/branch/main/graph/badge.svg?token=02AJ9XGFM6)](https://codecov.io/gh/rubynixson/ci-course)
+
+
 [![Run unit tests](https://github.com/rubynixson/ci-course/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/rubynixson/ci-course/actions/workflows/unit-tests.yml)
 # OxRSE Continuous Integration course
 
