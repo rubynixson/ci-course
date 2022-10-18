@@ -1,3 +1,5 @@
+[![BCH compliance](https://bettercodehub.com/edge/badge/rubynixson/ci-course?branch=main)](https://bettercodehub.com/)
+
 [![codecov](https://codecov.io/gh/rubynixson/ci-course/branch/main/graph/badge.svg?token=02AJ9XGFM6)](https://codecov.io/gh/rubynixson/ci-course)
 
 
